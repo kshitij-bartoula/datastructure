@@ -1,0 +1,105 @@
+Initialize git:
+
+    git init
+
+"Creating new files"
+
+To get status:
+
+    git status
+
+Config:
+
+    git config --global user.email "eg@gmail.com"
+    git config --global user.name "kshitij bartoula"
+
+To add file to staging area:
+
+    git add filename.txt
+    git add file1.txt file2.txt 
+    git add .     #(for all files)
+
+To see difference(after git add .):
+    
+    git diff --staged
+
+To commit the changes:
+
+    git commit -m "messages"
+
+To load script in staging area of git:
+
+   git remote add origin url_of_git_repo
+
+To push into git:
+
+    git push origin branch_name
+
+view commit history:
+   
+    git log
+    git log --oneline  (view in oneline)
+
+Move to previous version:
+   
+    git checkout #number_of_prev_version
+    git checkout main (move to current main status)
+
+To add new branch:
+ 
+    git branch branch_name
+
+To delete branch:
+
+    git branch -d branch_name (merge vako dlt hunxa)
+    git branch -D branch_name (merge navako dlt hunxa)
+
+To insert into branch:
+    
+    git checkout branch_name
+
+To check the current branch:
+    
+    git branch
+
+To copy/clone git repo:
+    
+    git clone code_url
+
+to add people in project:
+   setting>manage access>add colaborator
+
+to merge into main branch:
+   
+    switch to other sub branch > work there> commit changes> switch again to main branch> git merge sub_branch
+
+to add and commit in oneline:
+  
+    git commit -am "message"
+
+if we commit in wrong branch and need to roll back to previous right stage
+
+   git reset --hard SHA_value  (tei wrong vako branch bata)
+
+to pull :
+ 
+   git pull origin branch(main)
+
+to check merged/non merged branch:
+ 
+   git branch --merged
+   git branch --no-merged
+
+to add versioninng/tagging:
+
+   git tag -a v.1 -m "message"
+
+to check tag:
+   git tag
+
+to return to previous version:
+   git checkout version(eg V.1)
+
+
+
+
